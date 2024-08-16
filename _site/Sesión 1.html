@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.54">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Sesión 1 – rediudd</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">rediudd</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Sesión1</span>
+    </span>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sesión-1---regulación-digital" id="toc-sesión-1---regulación-digital" class="nav-link active" data-scroll-target="#sesión-1---regulación-digital">Sesión 1 - Regulación Digital</a>
+  <ul class="collapse">
+  <li><a href="#historia-de-la-tecnología" id="toc-historia-de-la-tecnología" class="nav-link" data-scroll-target="#historia-de-la-tecnología">Historia de la tecnología</a>
+  <ul class="collapse">
+  <li><a href="#concepto-de-tecnología" id="toc-concepto-de-tecnología" class="nav-link" data-scroll-target="#concepto-de-tecnología">Concepto de tecnología</a></li>
+  <li><a href="#concepto-de-invención" id="toc-concepto-de-invención" class="nav-link" data-scroll-target="#concepto-de-invención">Concepto de invención​</a></li>
+  <li><a href="#qué-estándar-usamos" id="toc-qué-estándar-usamos" class="nav-link" data-scroll-target="#qué-estándar-usamos">¿Qué estándar usamos?​</a></li>
+  <li><a href="#qué-rol-cabe-a-la-tecnología" id="toc-qué-rol-cabe-a-la-tecnología" class="nav-link" data-scroll-target="#qué-rol-cabe-a-la-tecnología">¿Qué rol cabe a la tecnología?​</a></li>
+  <li><a href="#condiciones" id="toc-condiciones" class="nav-link" data-scroll-target="#condiciones">Condiciones​</a></li>
+  <li><a href="#conflicto" id="toc-conflicto" class="nav-link" data-scroll-target="#conflicto">Conflicto​</a></li>
+  <li><a href="#trampas-tecnológicas" id="toc-trampas-tecnológicas" class="nav-link" data-scroll-target="#trampas-tecnológicas">Trampas tecnológicas​</a></li>
+  <li><a href="#tecnología-y-comunicación" id="toc-tecnología-y-comunicación" class="nav-link" data-scroll-target="#tecnología-y-comunicación">Tecnología y comunicación​</a></li>
+  </ul></li>
+  <li><a href="#pensadores-sobre-el-desarrollo" id="toc-pensadores-sobre-el-desarrollo" class="nav-link" data-scroll-target="#pensadores-sobre-el-desarrollo">Pensadores sobre el desarrollo</a>
+  <ul class="collapse">
+  <li><a href="#niall-ferguson" id="toc-niall-ferguson" class="nav-link" data-scroll-target="#niall-ferguson">Niall Ferguson​</a></li>
+  <li><a href="#robert-nisbet" id="toc-robert-nisbet" class="nav-link" data-scroll-target="#robert-nisbet">Robert Nisbet​</a></li>
+  <li><a href="#joseph-schumpeter" id="toc-joseph-schumpeter" class="nav-link" data-scroll-target="#joseph-schumpeter">Joseph Schumpeter​</a></li>
+  <li><a href="#jason-hickel" id="toc-jason-hickel" class="nav-link" data-scroll-target="#jason-hickel">Jason Hickel​</a></li>
+  <li><a href="#enrique-ghersi" id="toc-enrique-ghersi" class="nav-link" data-scroll-target="#enrique-ghersi">Enrique Ghersi​</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Sesión 1</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sesión-1---regulación-digital" class="level1">
+<h1>Sesión 1 - Regulación Digital</h1>
+<section id="historia-de-la-tecnología" class="level2">
+<h2 class="anchored" data-anchor-id="historia-de-la-tecnología">Historia de la tecnología</h2>
+<section id="concepto-de-tecnología" class="level3">
+<h3 class="anchored" data-anchor-id="concepto-de-tecnología">Concepto de tecnología</h3>
+<p>Definición vaga y valorativa: La tecnología es difícil de definir, ya que en su uso común se asocia con objetos físicos y se asume que la tecnología más nueva es mejor.​</p>
+<p>Tecnología vs.&nbsp;artefacto: Los objetos físicos, como una bombilla o una cuchara, son productos de la tecnología, pero no son la tecnología en sí. La tecnología es un sistema que incluye conocimientos y comportamientos.​</p>
+<p>Una bombilla, como objeto físico, es simple, pero requiere un sistema complejo (producción de electricidad, red de distribución) para funcionar como tecnología.​</p>
+<p>Tecnologías sin artefactos físicos: Algunas tecnologías, como la educación o el lenguaje, no producen un producto físico, pero son esenciales en nuestra sociedad.​</p>
+<p>Entender el contexto social: Para comprender una tecnología, es necesario entender la red de conocimientos y el contexto social en el que fue creada, ya que el mismo objeto puede tener diferentes significados y usos en distintas culturas.​</p>
+<p>Importancia del contexto histórico: Para valorar adecuadamente las tecnologías del pasado, debemos entender el contexto social y educativo en el que surgieron.</p>
+</section>
+<section id="concepto-de-invención" class="level3">
+<h3 class="anchored" data-anchor-id="concepto-de-invención">Concepto de invención​</h3>
+<p>Definición de invención: La invención es el proceso de identificar un problema, imaginar una solución y tomar medidas para alcanzarla, y no siempre implica la creación de un objeto físico.​</p>
+<p>Historias de inventores: Los inventores, a menudo presentados como héroes que enfrentan adversidades, se han convertido en figuras icónicas en la historia, con historias que resaltan la curiosidad, la persistencia y la posibilidad de que individuos cambien el curso de la historia.​</p>
+<p>Diferencia entre invención y tecnología: Aunque las invenciones son importantes, no siempre se convierten en nuevas tecnologías. Para que una invención sea exitosa, debe ser adoptada por la sociedad, lo que requiere aceptación social y utilidad técnica.​</p>
+<p>Aceptación social de las invenciones: No todas las invenciones exitosas son adoptadas, y algunas que son menos útiles logran ser aceptadas, lo que resalta la importancia del contexto social y cultural en la adopción de nuevas tecnologías.</p>
+</section>
+<section id="qué-estándar-usamos" class="level3">
+<h3 class="anchored" data-anchor-id="qué-estándar-usamos">¿Qué estándar usamos?​</h3>
+<p>Progresismo y presentismo: El progresismo es la idea de que el desarrollo sigue una línea de mejora constante, mientras que el presentismo juzga el pasado con los estándares del presente.​</p>
+<p>Conocimiento vs.&nbsp;información: La tecnología moderna nos ha dado acceso a más información, pero eso no significa que tengamos un conocimiento superior al de nuestros antepasados.​</p>
+<p>Interrelación de tecnologías: La tecnología no se desarrolla de manera lineal; antiguas y nuevas tecnologías se mezclan y se transforman a lo largo del tiempo y en diferentes lugares.​</p>
+<p>Ejemplo del error histórico: La falsa creencia de que las personas en el pasado pensaban que la Tierra era plana demuestra los peligros de asumir la ignorancia de nuestros antepasados.</p>
+</section>
+<section id="qué-rol-cabe-a-la-tecnología" class="level3">
+<h3 class="anchored" data-anchor-id="qué-rol-cabe-a-la-tecnología">¿Qué rol cabe a la tecnología?​</h3>
+<p>Relación entre tecnología y sociedad: Las sociedades dependen de la tecnología para sobrevivir, lo que genera una tensión entre el uso de la tecnología y las normas sociales.​</p>
+<p>Determinismo tecnológico: Propone que la tecnología determina el desarrollo social, pero esta idea es limitada y no siempre aplicable, como en el caso de la imprenta y la democracia.​</p>
+<p>Críticas al determinismo tecnológico:​</p>
+<p>No todas las tecnologías llevan inevitablemente a un desarrollo social específico.​</p>
+<p>El determinismo ignora la resistencia al cambio tecnológico en la historia.​</p>
+<p>Asume que la sociedad es pasiva y que el materialismo es el mejor criterio de éxito social.​</p>
+<p>Contribución de Jacques Ellul: Introdujo el concepto de “técnica” para diferenciar entre el artefacto y el sistema, y advirtió que la búsqueda de eficiencia técnica puede sacrificar la humanidad y la moralidad.</p>
+</section>
+<section id="condiciones" class="level3">
+<h3 class="anchored" data-anchor-id="condiciones">Condiciones​</h3>
+<section id="condiciones-favorables-para-la-innovación" class="level4">
+<h4 class="anchored" data-anchor-id="condiciones-favorables-para-la-innovación">Condiciones favorables para la innovación:​</h4>
+<p>Competencia: Fomenta la innovación, especialmente en un “mercado de ideas” dentro de un contexto cultural común.​</p>
+<p>Actitud cultural favorable a la novedad: Sociedades interesadas en lo nuevo tienden a aceptar más fácilmente las innovaciones tecnológicas.​</p>
+<p>Flexibilidad social: La movilidad social y la capacidad de adaptación permiten que la innovación prospere.​</p>
+</section>
+<section id="factores-que-limitan-la-innovación" class="level4">
+<h4 class="anchored" data-anchor-id="factores-que-limitan-la-innovación">Factores que limitan la innovación:​</h4>
+<p>Agitación social: Colapso económico o guerra pueden frenar la innovación.​</p>
+<p>Falta de educación: Limita la difusión y el desarrollo de nuevas tecnologías.​</p>
+<p>Conformidad social: Sociedades con estricta conformidad social tienden a ser menos innovadoras.​</p>
+<p>Esfuerzos gubernamentales: Los gobiernos han intentado fomentar la innovación a través de premios, incentivos y educación, con resultados variados.​</p>
+<p>Innovación dirigida: Aunque se ha intentado estimular la innovación mediante inversiones directas, el éxito no está garantizado, como se muestra en ejemplos históricos tanto exitosos como fallidos.</p>
+</section>
+</section>
+<section id="conflicto" class="level3">
+<h3 class="anchored" data-anchor-id="conflicto">Conflicto​</h3>
+<p>Ganadores y perdedores: La introducción de nuevas tecnologías crea beneficios para algunos (ganadores) y pérdidas para otros (perdedores).​</p>
+<p>Impacto en el empleo:​</p>
+<p>Tecnologías nuevas desplazan empleos tradicionales (ej., tejedores, escribas).​</p>
+<p>A largo plazo, suelen crearse más empleos de los que se eliminan.​</p>
+<p>Ganadores:​</p>
+<p>Aquellos que logran capitalizar la nueva tecnología, a menudo alcanzando gran riqueza.​</p>
+<p>Nuevas clases de empleo, altamente técnicos y bien remunerados son creadas.​</p>
+<p>Perdedores:​</p>
+<p>Individuos desplazados que pueden caer en la pobreza y el desempleo.​</p>
+<p>Regiones y culturas enteras que son desplazadas o destruidas por nuevas tecnologías.​</p>
+<p>Historia de la tecnología:​</p>
+<p>Suele ser una historia contada por los ganadores, mientras que las sociedades que no pudieron adaptarse o resolver problemas tecnológicos suelen ser olvidadas.</p>
+</section>
+<section id="trampas-tecnológicas" class="level3">
+<h3 class="anchored" data-anchor-id="trampas-tecnológicas">Trampas tecnológicas​</h3>
+<p>Definición de trampas tecnológicas: Situaciones donde la perfección de tecnologías conduce a consecuencias negativas no previstas.​</p>
+<p>Ejemplos históricos:​</p>
+<p>Domesticación: Sacrificio de la autonomía de los cazadores-recolectores por la estabilidad agrícola.​</p>
+<p>Irrigación: Aumento de la producción agrícola seguido por la salinización y el colapso social.​</p>
+<p>Uso de la madera: Agotamiento de recursos, como en la Isla de Pascua, que llevó al colapso de la sociedad.​</p>
+<p>Trampa tecnológica moderna:​</p>
+<p>Petróleo: Dependencia extrema de los productos derivados del petróleo en la industria moderna, con el riesgo de agotamiento sin alternativas claras.</p>
+</section>
+<section id="tecnología-y-comunicación" class="level3">
+<h3 class="anchored" data-anchor-id="tecnología-y-comunicación">Tecnología y comunicación​</h3>
+<p>Relación entre tecnología y comunicación: La forma en que la información se mueve afecta la difusión y percepción de la tecnología.​</p>
+<p>Marshall McLuhan: “El medio es el mensaje”, la forma de comunicación moldea la respuesta y percepción de la información.​</p>
+<p>Harold Innis: La comunicación fue clave en la formación y control de imperios, como el Nilo en Egipto, que actuaba como sistema de comunicación.​</p>
+<p>Redes y estructuras sociales: Redes como caminos, telégrafos y la radio han permitido la creación de estructuras sociales más grandes.​</p>
+<p>Similitudes entre redes: Las redes sociales y tecnológicas comparten estructuras con enlaces formales e informales que facilitan la transmisión de información.</p>
+</section>
+</section>
+<section id="pensadores-sobre-el-desarrollo" class="level2">
+<h2 class="anchored" data-anchor-id="pensadores-sobre-el-desarrollo">Pensadores sobre el desarrollo</h2>
+<section id="niall-ferguson" class="level3">
+<h3 class="anchored" data-anchor-id="niall-ferguson">Niall Ferguson​</h3>
+<p>Las “killers applications” de acuerdo a Ferguson​</p>
+<p>Competencia: ​</p>
+<p>Ferguson argumenta que la competencia política y económica dentro de Europa fomentó la innovación y el progreso. La fragmentación política, con múltiples estados rivales, creó un ambiente en el que ninguna potencia tenía el monopolio absoluto, lo que impulsó la competencia en áreas como el comercio, la guerra, y la tecnología. ​</p>
+<p>Ciencia: ​</p>
+<p>El desarrollo de la ciencia moderna, que comenzó con la Revolución Científica del siglo XVII, proporcionó a las sociedades occidentales una comprensión más profunda del mundo natural, permitiendo avances tecnológicos que dieron a Europa una ventaja sobre otras culturas. ​</p>
+<p>Propiedad Privada: ​</p>
+<p>La protección de la propiedad privada y el respeto por los derechos individuales en Occidente fomentaron el desarrollo económico. Ferguson sostiene que la existencia de un marco legal sólido que protegía la propiedad y los contratos fue fundamental para el surgimiento del capitalismo en Occidente.</p>
+<p>Medicina:​​</p>
+<p>Los avances en la medicina occidental, especialmente durante los siglos XIX y XX, permitieron a las sociedades europeas y sus colonias superar enfermedades que devastaban a otras poblaciones. Esto contribuyó a la expansión y consolidación del dominio occidental.​​</p>
+<p>Consumo:​​</p>
+<p>El auge de una sociedad de consumo en Occidente creó mercados masivos que incentivaron la producción y la innovación. Ferguson sugiere que la capacidad de los países occidentales para generar riqueza a través del consumo masivo fue crucial para su crecimiento económico.​​</p>
+<p>Ética del Trabajo:​​</p>
+<p>Finalmente, Ferguson destaca la importancia de la ética del trabajo protestante, una idea popularizada por el sociólogo Max Weber. Según esta perspectiva, la ética del trabajo y el énfasis en la disciplina y la frugalidad en las sociedades protestantes fomentaron la acumulación de capital y el desarrollo económico.</p>
+</section>
+<section id="robert-nisbet" class="level3">
+<h3 class="anchored" data-anchor-id="robert-nisbet">Robert Nisbet​</h3>
+<p>Orígenes del progreso​ Noción Antigüa del Cambio​ Las civilizaciones antiguas, como las griega y romana, reconocían el cambio y la mejora en aspectos específicos de la vida, como la tecnología o la organización política, pero no concebían un progreso lineal y continuo en la historia.​</p>
+<p>Los griegos, por ejemplo, a menudo veían el pasado como una era dorada, un tiempo de mayor virtud y cercanía a los dioses, lo que no se alinea con la idea de progreso como avance constante hacia un futuro mejor.​</p>
+<p>Progreso en la Tradición Judeocristiana</p>
+<p>Según Nisbet, la idea de un progreso lineal y continuo se enraíza más claramente en la tradición judeocristiana, donde la historia se percibe como un proceso dirigido por un propósito divino.​</p>
+<p>La narrativa bíblica, que comienza con la creación y se dirige hacia una redención final, ofrece una visión teleológica de la historia, en la que los eventos se encaminan hacia un desenlace determinado por la voluntad de Dios.​</p>
+<p>Esta perspectiva histórica aporta una base para la idea de que la humanidad avanza hacia un objetivo, un concepto que luego será secularizado en la modernidad.</p>
+<p>Progreso en la modernidad​</p>
+<p>Secularización de la Idea de Progreso​</p>
+<p>Durante la Ilustración, el concepto de progreso se desvincula del marco religioso y se seculariza, convirtiéndose en un principio central del pensamiento occidental.​</p>
+<p>La razón, la ciencia y la educación emergen como los nuevos motores del progreso, vistos como herramientas que permiten a la humanidad avanzar hacia un futuro más racional y mejorado.​</p>
+<p>Filósofos como Voltaire, Condorcet y Kant promueven la idea de que la humanidad puede y debe mejorar a través de la acumulación de conocimiento y la aplicación de la razón.​</p>
+<p>Condorcet, en particular, en su obra “Esbozo de un cuadro histórico de los progresos del espíritu humano”, visualiza la historia humana como una serie de etapas de progreso hacia un estado de perfección.​</p>
+<p>Kant, por su parte, ve el progreso moral y ético como el resultado del ejercicio de la razón en la vida pública y la educación.</p>
+<p>Justificación de Revoluciones Sociales y Políticas:​</p>
+<p>Nisbet observa que la visión optimista del progreso durante la Ilustración no solo alimentó el desarrollo intelectual, sino que también justificó muchas de las revoluciones sociales y políticas de la época.​</p>
+<p>La Revolución Francesa, por ejemplo, se enmarca dentro de esta lógica de progreso, donde la razón y los derechos humanos se erigen como pilares para construir una nueva sociedad más justa y racional.​</p>
+<p>Este optimismo en la capacidad de la humanidad para moldear un futuro mejor a través del progreso racional también influenció movimientos como la abolición de la esclavitud y la promoción de la democracia.</p>
+<p>Críticas al Progreso​</p>
+<p>Cuestionamiento de la Inevitabilidad del Progreso​</p>
+<p>A partir del siglo XIX, pensadores como Friedrich Nietzsche, Karl Marx y Sigmund Freud comenzaron a cuestionar la idea de que la historia avanza inevitablemente hacia un estado mejor.​</p>
+<p>Nietzsche: Criticó la noción de progreso como una ilusión que enmascara la decadencia moral y espiritual de la sociedad. Para Nietzsche, la creencia en un progreso inevitable es un síntoma de debilidad y negación de la realidad.​</p>
+<p>Marx: Aunque veía la historia como un proceso dialéctico, Marx no creía que el progreso fuera automático ni siempre positivo. Según Marx, el progreso bajo el capitalismo lleva a la alienación y la explotación, y solo la revolución proletaria podría conducir a una verdadera mejora social.​</p>
+<p>Freud: Freud argumentó que el progreso científico y tecnológico no necesariamente lleva a la felicidad humana, sino que puede exacerbar las tensiones psíquicas y los conflictos internos.</p>
+<p>Impacto de las Guerras Mundiales​</p>
+<p>Las dos guerras mundiales del siglo XX sacudieron profundamente la fe en el progreso. La brutalidad, la destrucción masiva y el uso de la tecnología para la guerra devastaron la noción de que la humanidad estaba en un camino inevitable hacia la mejora continua.​</p>
+<p>El Holocausto, los bombardeos atómicos y los genocidios del siglo XX son ejemplos de cómo el “progreso” tecnológico y científico puede ser utilizado para fines destructivos, llevando a una reevaluación crítica de la idea de progreso.​</p>
+<p>Progreso como Ideología​</p>
+<p>La Ideología del Progreso en la Modernidad​</p>
+<p>Nisbet sostiene que la idea de progreso se institucionalizó en la modernidad, convirtiéndose en una ideología dominante que guía no solo el pensamiento filosófico y político, sino también la ciencia, la tecnología y la economía.​</p>
+<p>Esta ideología del progreso se basa en la creencia de que el desarrollo continuo en todos los aspectos de la vida humana es tanto deseable como inevitable, y que cualquier retroceso es temporal o corregible.</p>
+<p>Peligros de la Ideología del Progreso​</p>
+<p>Nisbet advierte que aceptar la ideología del progreso sin cuestionamientos puede ser peligroso. Esta creencia puede conducir a una complacencia, donde las personas asumen que el progreso resolverá todos los problemas sin necesidad de una acción consciente y crítica.​</p>
+<p>Además, la ideología del progreso ha sido utilizada para justificar acciones moralmente cuestionables en nombre de un “bien mayor”. Ejemplos incluyen la explotación colonial, las políticas eugenésicas y la destrucción ambiental, todas defendidas en algún momento como parte de un supuesto avance hacia un futuro mejor.</p>
+<p>Progreso y Desencanto​</p>
+<p>El Desencanto en la Modernidad​</p>
+<p>A medida que la fe en el progreso no cumplió con sus promesas, especialmente tras las devastaciones del siglo XX, surgió un desencanto generalizado con la idea de que el progreso podría garantizar un futuro mejor.​</p>
+<p>Este desencanto se reflejó en movimientos filosóficos y culturales que cuestionaron la capacidad del progreso para resolver problemas fundamentales de la humanidad, como la alienación, la desigualdad y la destrucción ambiental.</p>
+<p>Escepticismo sobre el Progreso​</p>
+<p>El desencanto llevó a un escepticismo creciente sobre la capacidad del progreso para resolver los problemas humanos, particularmente en el contexto de las crisis contemporáneas, como el cambio climático, las crisis económicas y las tensiones sociales.​</p>
+<p>Nisbet señala que este escepticismo ha provocado una reevaluación de lo que entendemos por “progreso”, sugiriendo que la mejora no es siempre lineal ni inevitable, y que debe ser replanteada en términos más humanos y sostenibles.</p>
+</section>
+<section id="joseph-schumpeter" class="level3">
+<h3 class="anchored" data-anchor-id="joseph-schumpeter">Joseph Schumpeter​</h3>
+<p>Elementos de la Destrucción Creativa​</p>
+<p>Innovación como Motor del Cambio​</p>
+<p>Papel de los Emprendedores:​</p>
+<p>Los emprendedores son vistos como los agentes del cambio, introduciendo innovaciones que alteran las estructuras económicas existentes. Ellos son los que desafían el statu quo al crear nuevos productos, servicios o procesos que transforman industrias enteras.​</p>
+<p>Cambio de Reglas Económicas:​</p>
+<p>Cada innovación redefine las reglas del mercado. Por ejemplo, la invención de la máquina de vapor no solo revolucionó la producción industrial, sino que también cambió la estructura laboral, la logística y el comercio global.​</p>
+<p>Impacto en la Competencia:​</p>
+<p>Las innovaciones pueden reducir las barreras de entrada en mercados establecidos, permitiendo a nuevas empresas competir con gigantes preexistentes, lo que puede desestabilizar industrias consolidadas.</p>
+<p>Destrucción de Viejas Industrias​</p>
+<p>Obsolescencia Tecnológica:​</p>
+<p>Tecnologías que antes eran dominantes pueden volverse obsoletas rápidamente. Por ejemplo, la llegada de la fotografía digital hizo que la industria del revelado fotográfico químico prácticamente desapareciera.​</p>
+<p>Quiebras y Desempleo:​</p>
+<p>Empresas que no se adaptan a las nuevas tecnologías o modelos de negocio pueden enfrentar quiebras. Esto a menudo resulta en la pérdida de empleos en sectores que ya no son competitivos, como ocurrió con muchas fábricas durante la desindustrialización en varias economías avanzadas.​</p>
+<p>Resistencia al Cambio:​</p>
+<p>Las industrias y sectores afectados a menudo resisten el cambio, lo que puede llevar a conflictos sociales y económicos, como huelgas laborales o lobbies que buscan mantener el statu quo.</p>
+<p>Creación de Nuevas Oportunidades​</p>
+<p>Nacimiento de Nuevas Industrias:​</p>
+<p>A medida que las viejas industrias se desmoronan, surgen nuevas oportunidades. Por ejemplo, la caída de la industria del carbón en muchas regiones fue acompañada por el auge de la energía renovable.​</p>
+<p>Generación de Empleo:​</p>
+<p>Las innovaciones pueden crear empleos en sectores emergentes. La revolución digital, por ejemplo, ha dado lugar a millones de nuevos empleos en tecnología de la información, diseño de software, y comercio electrónico.​</p>
+<p>Mejora del Bienestar:​</p>
+<p>Las nuevas tecnologías y modelos de negocio pueden mejorar la calidad de vida al ofrecer productos más eficientes, accesibles o innovadores, como ha sucedido con la evolución de la medicina y las telecomunicaciones.</p>
+<p>Ciclo Continuo​</p>
+<p>Inexorabilidad del Proceso:​</p>
+<p>Schumpeter subraya que la destrucción creativa es un proceso continuo y cíclico. No es un evento único, sino una dinámica constante en el capitalismo, donde cada ola de innovación eventualmente será reemplazada por otra.​</p>
+<p>Adaptación Necesaria:​</p>
+<p>Tanto las empresas como los trabajadores deben adaptarse continuamente para sobrevivir y prosperar en un entorno de constante cambio tecnológico. Esto significa un proceso perpetuo de aprendizaje y ajuste.​</p>
+<p>Evolución del Mercado:​</p>
+<p>Los mercados evolucionan y se transforman con cada ciclo, lo que puede llevar a cambios significativos en la estructura económica global, como la transición de una economía industrial a una economía de servicios.</p>
+<p>Impulso del Progreso Económico​</p>
+<p>Renovación Constante:​</p>
+<p>La destrucción creativa es vista como el mecanismo que impulsa la renovación constante de la economía. Aunque es un proceso doloroso para algunos, es esencial para el dinamismo y la evolución de la economía en su conjunto.​</p>
+<p>Crecimiento a Largo Plazo:​</p>
+<p>Según Schumpeter, este proceso es fundamental para el crecimiento económico sostenido. A largo plazo, las innovaciones impulsan mejoras en la productividad, aumentos en el bienestar económico y el desarrollo de nuevas industrias que pueden sostener el crecimiento económico global.​</p>
+<p>Consecuencias Sociales y Económicas:​</p>
+<p>Aunque la destrucción creativa puede causar sufrimiento en el corto plazo, como la pérdida de empleos y la dislocación social, es vista como un componente necesario del progreso y la expansión económica en el capitalismo. Schumpeter sostiene que, en última instancia, estos sacrificios conducen a un futuro de mayor prosperidad y avance tecnológico.</p>
+</section>
+<section id="jason-hickel" class="level3">
+<h3 class="anchored" data-anchor-id="jason-hickel">Jason Hickel​</h3>
+<p>Menos es más​</p>
+<p>Crítica al Crecimiento Económico Perpetuo​</p>
+<p>Incompatibilidad con los Límites Planetarios:​</p>
+<p>Hickel sostiene que el crecimiento económico perpetuo choca con los límites ecológicos del planeta. A medida que las economías crecen, la extracción de recursos naturales y la generación de desechos aumentan, lo que supera la capacidad de regeneración de los ecosistemas y lleva al agotamiento de recursos vitales.​</p>
+<p>Impacto en el Cambio Climático:​</p>
+<p>El crecimiento económico está estrechamente vinculado al aumento de emisiones de gases de efecto invernadero. Hickel argumenta que la expansión continua del PIB agrava el cambio climático, ya que más producción y consumo implican más energía, transporte, y explotación de recursos, la mayoría de los cuales dependen de combustibles fósiles.​</p>
+<p>Pérdida de Biodiversidad:​</p>
+<p>La demanda creciente de tierras para agricultura, minería y urbanización, impulsada por el crecimiento económico, contribuye a la deforestación y la destrucción de hábitats naturales, lo que provoca una alarmante pérdida de biodiversidad.</p>
+<p>Insostenibilidad del Crecimiento Verde​</p>
+<p>Mito del Desacoplamiento Absoluto:​</p>
+<p>Hickel critica la idea de que el crecimiento económico pueda desacoplarse completamente del uso de recursos y del impacto ambiental. Aunque algunas tecnologías limpias pueden reducir la intensidad de recursos por unidad de PIB, Hickel sostiene que no hay evidencia que muestre que estas mejoras puedan compensar el efecto de un crecimiento continuo.​</p>
+<p>Efecto Rebote:​</p>
+<p>Uno de los problemas del crecimiento verde es el “efecto rebote”, donde las ganancias en eficiencia se traducen en un mayor consumo total, anulando los beneficios ambientales. Por ejemplo, la eficiencia energética en automóviles puede llevar a una reducción del costo por kilómetro, lo que incentiva a las personas a conducir más.​</p>
+<p>Tiempo Insuficiente para Abordar la Crisis:​</p>
+<p>Hickel argumenta que, incluso si el crecimiento verde pudiera desacoplarse parcialmente del impacto ambiental, el ritmo necesario para mitigar el cambio climático y otras crisis ambientales es tan rápido que las soluciones basadas en el crecimiento económico son inadecuadas. Necesitamos reducir el consumo y la producción en las economías ricas de manera más inmediata.</p>
+<p>Equidad Global​</p>
+<p>Redistribución del Consumo:​</p>
+<p>Hickel plantea que las economías ricas deben reducir su consumo para liberar “espacio ecológico” que permita a los países en desarrollo mejorar su bienestar sin sobrepasar los límites planetarios. Esto implica un enfoque en la redistribución global de recursos y oportunidades.​</p>
+<p>Deuda Ecológica:​</p>
+<p>Hickel introduce el concepto de “deuda ecológica”, donde los países desarrollados, al haber consumido desproporcionadamente los recursos del planeta, tienen una responsabilidad histórica de reducir su consumo y apoyar a las naciones en desarrollo en su transición hacia la sostenibilidad.​</p>
+<p>Enfoque en el Bienestar Humano:​</p>
+<p>En lugar de centrarse en el crecimiento del PIB, Hickel aboga por políticas que prioricen el bienestar humano, la equidad social y la sostenibilidad ecológica. Esto incluye garantizar que las necesidades básicas estén cubiertas en todos los países, permitiendo una vida digna sin depender de un crecimiento económico perpetuo.​</p>
+<p>Justicia Climática:​</p>
+<p>Hickel subraya la importancia de la justicia climática, donde los países que han contribuido menos al cambio climático pero que son los más vulnerables a sus efectos deben recibir apoyo y recursos de las naciones más ricas, que son las principales responsables de las emisiones históricas de carbono.​</p>
+<p>Bienestar y Decrecimiento​</p>
+<p>Reevaluación del PIB como Medida de Éxito:​</p>
+<p>Hickel critica el uso del PIB como la medida principal de éxito económico, argumentando que no refleja el bienestar humano real ni la sostenibilidad ecológica. Propone que el éxito debe medirse en función de la calidad de vida, la satisfacción de necesidades básicas y la equidad social.​</p>
+<p>Enfoque en las Necesidades Básicas:​</p>
+<p>En lugar de centrarse en el crecimiento económico, Hickel aboga por un modelo que garantice que todas las personas tengan acceso a alimentos, agua, vivienda, salud y educación. El objetivo es que las economías prioricen la satisfacción de estas necesidades fundamentales por encima de la acumulación de riqueza.​</p>
+<p>Sostenibilidad Ecológica:​</p>
+<p>Hickel destaca la importancia de desarrollar economías que operen dentro de los límites planetarios, minimizando el impacto ambiental. Esto implica reducir el consumo de recursos naturales y las emisiones de carbono, protegiendo al mismo tiempo los ecosistemas y la biodiversidad.​</p>
+<p>Equidad Social:​</p>
+<p>Hickel propone que el bienestar debe distribuirse equitativamente, asegurando que todas las personas, independientemente de su ubicación geográfica o situación económica, tengan acceso a una vida digna. Esto requiere políticas que reduzcan la desigualdad económica y mejoren la cohesión social.​</p>
+<p>Calidad de Vida vs.&nbsp;Consumo Material:​</p>
+<p>En lugar de perseguir un aumento constante del consumo material, Hickel sugiere que las economías deberían enfocarse en mejorar la calidad de vida a través de servicios públicos robustos, espacios comunitarios, y una mayor cantidad de tiempo libre.</p>
+<p>Alternativas al Capitalismo de Crecimiento​</p>
+<p>Reducción de la Jornada Laboral:​</p>
+<p>Hickel propone reducir la jornada laboral como una forma de distribuir mejor el trabajo disponible, reducir el desempleo y dar a las personas más tiempo para actividades que no estén relacionadas con el consumo, como el ocio, la familia y la participación comunitaria.​</p>
+<p>Redistribución de la Riqueza:​</p>
+<p>Una de las medidas clave para el decrecimiento es la redistribución de la riqueza, tanto a nivel nacional como global. Hickel aboga por impuestos progresivos y otras políticas redistributivas para reducir la desigualdad y asegurar que todos tengan acceso a los recursos necesarios.​</p>
+<p>Fortalecimiento de los Bienes Comunes:​</p>
+<p>Hickel enfatiza la importancia de proteger y fortalecer los bienes comunes, como el agua, el aire, los bosques y otros recursos naturales, así como los servicios públicos como la educación y la salud. Estos bienes comunes deben gestionarse de manera sostenible y equitativa para beneficio de toda la sociedad.​</p>
+<p>Promoción de Economías Locales Resilientes:​</p>
+<p>En lugar de depender de cadenas de suministro globales vulnerables y del crecimiento impulsado por las exportaciones, Hickel aboga por el desarrollo de economías locales resilientes que sean autosuficientes, sostenibles y capaces de satisfacer las necesidades de las comunidades locales.​</p>
+<p>Transición Energética:​</p>
+<p>Hickel subraya la necesidad de una transición energética hacia fuentes renovables y sostenibles, eliminando la dependencia de los combustibles fósiles. Esto implica no solo un cambio tecnológico, sino también un cambio en los patrones de consumo y producción.</p>
+<p>Cambio de Paradigma​</p>
+<p>Desafío a la Lógica del Crecimiento:​</p>
+<p>El decrecimiento desafía la lógica fundamental del capitalismo de crecimiento, que se basa en la acumulación perpetua de capital y la maximización del consumo. Hickel argumenta que este modelo es insostenible y debe ser reemplazado por un enfoque que valore la estabilidad y la suficiencia.​</p>
+<p>Revalorización de la Naturaleza:​</p>
+<p>En el paradigma del decrecimiento, la naturaleza no se ve como un recurso infinito a explotar, sino como un bien preciado que debe ser protegido y preservado. Esto implica un cambio hacia una economía que respete los límites ecológicos y valore la biodiversidad.​</p>
+<p>Importancia del Tiempo Libre:​</p>
+<p>Hickel propone una revalorización del tiempo libre, argumentando que la obsesión con el trabajo y el consumo ha llevado a una disminución de la calidad de vida. El decrecimiento promovería un mayor equilibrio entre el trabajo y el ocio, permitiendo a las personas disfrutar de sus vidas fuera del ámbito laboral.​</p>
+<p>Fomento de la Comunidad:​</p>
+<p>En lugar de una sociedad centrada en el individualismo y el consumo, Hickel aboga por un enfoque que valore la comunidad y la cooperación. Las economías de decrecimiento fortalecerían las redes sociales y las comunidades locales, promoviendo la solidaridad y el apoyo mutuo.​</p>
+<p>Prioridad al Bienestar sobre la Acumulación:​</p>
+<p>El cambio de paradigma propuesto por Hickel pone el bienestar humano en el centro de la economía, desplazando el enfoque de la acumulación de riqueza y el consumo material como los principales indicadores de éxito.</p>
+</section>
+<section id="enrique-ghersi" class="level3">
+<h3 class="anchored" data-anchor-id="enrique-ghersi">Enrique Ghersi​</h3>
+<p>Costo de la legalidad​</p>
+<p>Costos Económicos Directos:​</p>
+<p>Ghersi argumenta que los costos económicos directos para cumplir con la legalidad en muchos países en desarrollo son prohibitivos. Esto incluye el pago de tasas, impuestos y tarifas oficiales que a menudo son desproporcionadamente altos en relación con los ingresos promedio de las personas y las pequeñas empresas.​</p>
+<p>Costos Sociales:​</p>
+<p>Además de los costos monetarios, cumplir con la legalidad impone costos sociales significativos. Las personas deben navegar por sistemas burocráticos complejos que demandan tiempo y esfuerzo, lo que afecta su capacidad para trabajar y generar ingresos.​</p>
+<p>Costos Temporales:​</p>
+<p>El tiempo invertido en cumplir con requisitos legales, como obtener licencias o permisos, puede ser extenso. Ghersi señala que estos procesos a menudo requieren múltiples visitas a oficinas gubernamentales, largas esperas y papeleo, lo que disuade a muchos de intentar operar legalmente.​</p>
+<p>Sobornos y Corrupción:​</p>
+<p>En muchos casos, los sobornos son una parte inevitable del costo de la legalidad. Funcionarios corruptos pueden exigir pagos ilegales para acelerar los trámites o para ignorar regulaciones complicadas, lo que aumenta aún más el costo de la formalidad.​</p>
+<p>Efecto Disuasorio:​</p>
+<p>El alto costo de la legalidad actúa como un disuasivo para que los individuos y las pequeñas empresas participen en la economía formal, lo que limita su acceso a beneficios legales como la protección de derechos de propiedad, acceso a crédito formal y la capacidad de escalar sus operaciones.</p>
+<p>Economía Informal​</p>
+<p>Refugio en la Informalidad:​</p>
+<p>Debido a los altos costos y barreras de entrada a la formalidad, muchas personas optan por la economía informal como una alternativa viable. Esta elección no es necesariamente una preferencia por la ilegalidad, sino una estrategia de supervivencia en un entorno económico y legal hostil.​</p>
+<p>Prevalencia de la Informalidad:​</p>
+<p>Ghersi, al igual que Hernando de Soto, enfatiza que la economía informal no es una pequeña fracción de la economía, sino que constituye una parte sustancial del tejido económico en muchos países en desarrollo. Esto incluye desde vendedores ambulantes hasta empresas informales que operan sin cumplir con todas las regulaciones legales.​</p>
+<p>Racionalidad de la Informalidad:​</p>
+<p>La elección de operar informalmente es racional desde la perspectiva de los costos y beneficios. La informalidad permite a las personas evitar los costos prohibitivos asociados con la legalidad y participar en actividades económicas que de otro modo serían inaccesibles.​</p>
+<p>Limitaciones de la Informalidad:​</p>
+<p>A pesar de su racionalidad, la economía informal tiene limitaciones. Los negocios informales carecen de protección legal, acceso a servicios financieros formales y están expuestos a riesgos como la confiscación de bienes o el cierre por parte de las autoridades.</p>
+<p>Burocracia y Corrupción​</p>
+<p>Burocracia como Barrera:​</p>
+<p>Ghersi critica la burocracia excesiva en los países en desarrollo, donde los procedimientos legales son complicados, poco claros y requieren la navegación de múltiples agencias gubernamentales. Esta burocracia actúa como una barrera significativa para el acceso a la formalidad.​</p>
+<p>Fomento de la Corrupción:​</p>
+<p>La burocracia engorrosa y los requisitos complejos fomentan un entorno donde la corrupción prospera. Los funcionarios pueden aprovecharse de la confusión y la necesidad de acelerar procesos para exigir sobornos, lo que aumenta el costo de la legalidad para los ciudadanos y las empresas.​</p>
+<p>Impacto en la Inversión y el Emprendimiento:​</p>
+<p>La combinación de burocracia y corrupción desincentiva la inversión y el emprendimiento. Los empresarios pueden verse desanimados a iniciar o expandir sus negocios si anticipan que enfrentarán costos adicionales y obstáculos significativos para operar legalmente.​</p>
+<p>Erosión de la Confianza en el Estado:​</p>
+<p>La prevalencia de la burocracia y la corrupción también erosiona la confianza de los ciudadanos en el Estado y en las instituciones legales. Cuando las personas perciben que el sistema está diseñado para beneficiarse de ellos en lugar de ayudarlos, su disposición a participar en la economía formal disminuye.</p>
+<p>Impacto en la Pobreza y la Desigualdad​</p>
+<p>Barreras de Entrada Desproporcionadas:​</p>
+<p>El alto costo de la legalidad afecta desproporcionadamente a las personas con menos recursos, ya que carecen de los medios financieros y el tiempo necesario para cumplir con los requisitos legales y burocráticos. Estas barreras de entrada impiden que los pobres puedan formalizar sus negocios, acceder a mercados formales y obtener protección legal.​</p>
+<p>Exclusión de Beneficios Formales:​</p>
+<p>Las personas que no pueden acceder a la economía formal se ven privadas de importantes beneficios, como el acceso a crédito formal, seguros, protección de derechos de propiedad y la capacidad de celebrar contratos legalmente vinculantes. Esto perpetúa un ciclo de pobreza y vulnerabilidad, donde los pobres no pueden acumular capital o mejorar su situación económica.​</p>
+<p>Economía Dual:​</p>
+<p>Ghersi argumenta que la existencia de un alto costo de la legalidad conduce a la formación de una economía dual. En esta estructura, una pequeña élite que puede permitirse los costos de la formalidad disfruta de los beneficios legales y económicos, mientras que la mayoría de la población queda atrapada en la informalidad, con acceso limitado a oportunidades económicas y sin protección legal adecuada.​</p>
+<p>Vulnerabilidad y Riesgo:​</p>
+<p>Aquellos que operan en la economía informal están expuestos a una mayor vulnerabilidad, tanto económica como legal. Sin la protección que ofrece la formalidad, estas personas corren el riesgo de perder sus ingresos y activos en cualquier momento debido a la intervención gubernamental, la falta de derechos de propiedad claros o la imposibilidad de hacer cumplir contratos.​</p>
+<p>Reproducción de la Desigualdad:​</p>
+<p>La perpetuación de la informalidad contribuye a la reproducción de la desigualdad social y económica, ya que los individuos y las empresas en la economía informal no pueden competir en igualdad de condiciones con aquellos en la economía formal. Esto refuerza la concentración de riqueza y oportunidades en manos de una minoría, mientras que la mayoría sigue excluida.</p>
+<p>Reforma Legal y Desregulación​</p>
+<p>Simplificación de Procesos:​</p>
+<p>Ghersi propone que uno de los primeros pasos para reducir el costo de la legalidad es la simplificación de los procesos burocráticos. Esto incluye la reducción del número de trámites necesarios para iniciar y operar un negocio, así como la digitalización de los procesos para facilitar el acceso y la rapidez en la gestión de permisos y licencias.​</p>
+<p>Reducción de Impuestos y Tarifas:​</p>
+<p>Para facilitar la inclusión económica, Ghersi aboga por la reducción de impuestos y tarifas que son excesivamente altos y actúan como barreras para la formalización. Esto incluye tanto los impuestos sobre la renta como los costos asociados con la obtención de licencias comerciales y otros permisos necesarios para operar legalmente.​</p>
+<p>Eliminación de Regulaciones Innecesarias:​</p>
+<p>Ghersi enfatiza la necesidad de eliminar regulaciones que no tienen un propósito claro o que solo sirven para complicar innecesariamente la actividad económica. La desregulación selectiva debe enfocarse en aquellas normas que no contribuyen a la protección del consumidor o del medio ambiente, sino que simplemente añaden costos y retrasos.​</p>
+<p>Marco Legal Accesible:​</p>
+<p>La desregulación no implica la ausencia de normas, sino la creación de un marco legal que sea accesible y razonable para todos los ciudadanos. Un marco legal simplificado y justo permitiría a más personas y empresas participar en la economía formal, beneficiándose de la legalidad sin enfrentar barreras insuperables.</p>
+<p>Legalidad como Bien Público​</p>
+<p>Accesibilidad Universal:​</p>
+<p>Ghersi considera que la legalidad debe ser vista como un bien público, accesible para todos los ciudadanos, independientemente de su situación económica. Esto significa que el marco legal debe ser diseñado de manera que todos puedan cumplir con la ley sin enfrentar costos prohibitivos.​</p>
+<p>Responsabilidad del Estado:​</p>
+<p>El Estado tiene la responsabilidad de asegurar que las leyes y regulaciones sean justas y no impongan cargas desproporcionadas sobre los ciudadanos. Esto incluye la necesidad de revisar continuamente las regulaciones para garantizar que sigan siendo relevantes, efectivas y no excluyan a los sectores más vulnerables de la sociedad.​</p>
+<p>Promoción de la Equidad y Justicia:​</p>
+<p>La legalidad, según Ghersi, debería promover la equidad y la justicia, asegurando que todos los ciudadanos tengan acceso a los beneficios de operar dentro del marco legal. Esto no solo mejora la cohesión social, sino que también impulsa el desarrollo económico al permitir que más personas participen plenamente en la economía.​</p>
+<p>Desarrollo Económico Sostenible:​</p>
+<p>Al considerar la legalidad como un bien público, se promueve un desarrollo económico más inclusivo y sostenible. Un marco legal accesible y equitativo fomenta la participación económica, reduce la informalidad y genera un entorno más justo para todos los ciudadanos.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "rediudd"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+      - text: Sesiones
+        menu:
+          - href: Sesion1.qmd
+            text: Sesión 1
+          - href: Sesión 2.qmd
+            text: Sesión 2
+          - href: Sesion3.qmd
+            text: Sesión 3
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+editor: visual
+

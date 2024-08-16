@@ -1,0 +1,43 @@
+---
+title: "Regulación Digital UDD"
+---
+## Sobre el curso
+
+El curso de Regulación Digital, ofrecido por la Facultad de Derecho de la Universidad del Desarrollo, está diseñado para proporcionar a los estudiantes una comprensión integral de las normativas y desafíos legales asociados a los entornos digitales. Ubicado en el quinto año de la carrera de Derecho, este curso electivo permite a los estudiantes adquirir conocimientos avanzados en regulación y contratos en el contexto digital, abordando aspectos como ciberseguridad, protección de datos, videojuegos, y plataformas digitales, entre otros temas emergentes.
+
+A lo largo del curso, se enfatiza tanto la teoría como la práctica, permitiendo a los estudiantes desarrollar una visión crítica y analítica de los principales fenómenos regulatorios en Chile y en el mundo. Los estudiantes no solo aprenderán a aplicar los principios y normas jurídicas a casos concretos en el ámbito digital, sino que también se les desafiará a proponer soluciones jurídicas con un sentido ético y justicia, considerando la evolución constante de las tecnologías y su impacto en la sociedad.
+
+El curso comienza con una exploración profunda de la historia de la tecnología y las revoluciones industriales, apoyado en textos fundamentales como los de Schumpeter, Marx y Engels. Se discuten las ideologías de desarrollo y la idea del progreso, introduciendo conceptos clave sobre la innovación y el costo de la legalidad. Esto sienta las bases para entender el surgimiento del Estado y sus funciones, abordando el rol del Estado emprendedor según Mazzucato, y contrastando estas ideas con las críticas de McCloskey, todo ello complementado con una reflexión sobre la "Lex informatica" y las escuelas de pensamiento relacionadas.
+
+A medida que el curso avanza, se adentra en aspectos específicos de la regulación de telecomunicaciones en Chile, estudiando la Ley 18.186 y los tipos de servicios y concesiones que regula. Los estudiantes también explorarán el concepto de datos personales, incluyendo los principios de tratamiento de datos y los derechos de los titulares, a través de un análisis de la Ley 19.628 y el proyecto de ley de datos. Este enfoque permite a los estudiantes comprender la legalidad del tratamiento de datos, las cesiones, transferencias y las posibles infracciones.
+
+Finalmente, el curso cubre aspectos esenciales de la contratación electrónica, diferenciando entre el entorno digital y el analógico, y estudiando las normas de derecho de consumo, términos y condiciones, y políticas de privacidad en plataformas electrónicas. Se analiza la regulación de medios de pago electrónicos y se introduce la legislación relacionada con la ciberseguridad y los delitos informáticos, preparando a los estudiantes para enfrentar los desafíos legales emergentes en un mundo cada vez más digitalizado.
+
+## Tipos de lecturas
+
+Lecturas obligatorias: Son fundamentales para el desarrollo de las clases y se evaluarán. Estas lecturas son indispensables para seguir adecuadamente el curso.
+
+Cedulario: Listado de preguntas a ser evaluadas en el certamen y en el examen.
+
+## Evaluaciones
+
+Presentación y minuta regulatoria (25%): El profesor formará grupos que deberán realizar una presentación sobre un tema del listado propuesto, y elaborar una minuta regulatoria de acuerdo con las especificaciones publicadas.
+
+Certamen (25%): Evaluación escrita de contenidos (clases y lecturas obligatorias) examinados hasta el día de la evaluación. Se publicará un cedulario parcial con las preguntas que se podrán realizar en el certamen.
+
+Examen (50%): Evaluación oral de contenidos del curso. Se publicará un cedulario completo con las preguntas que se podrán realizar en el examen.
+
+[Calendario](https://uddcl-my.sharepoint.com/:b:/g/personal/jose_lapostol_udd_cl/EQDimonIwP5CrQzWzobxLNEBnpg90dHvCmW6h30D2FEssw?e=yaazSc)
+
+## Cronograma del Curso
+
+[Programación del curso](https://uddcl-my.sharepoint.com/:w:/g/personal/jose_lapostol_udd_cl/EaP9Y3wyr0tJrQ9LdTmoRpgBDJkuLuUDtZk_Cd4l4Ms5wA?e=AC0CcN)
+
+## Invitados curso
+
+[Trinidad Torres - Cláusulas de competencia y contratación internacional](https://www.cariola.cl/equipo/torres-trinidad/)
+
+[Carolina Flisfisch - Mercado de medios de pago y finanzas abiertas](https://www.cariola.cl/equipo/flisfisch-carolina/)
+
+[Eduardo "El Profesor" Vilches - Ciberseguridad y el fenómeno de la cibercriminalidad](https://www.cariola.cl/equipo/vilches-eduardo/)
+
